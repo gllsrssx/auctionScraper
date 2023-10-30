@@ -27,7 +27,7 @@ def attribute_cars(data):
 
 def update_cars(data):
     for car in data:
-        car['total_price'] = int(car['nextMinimalBid']['cents'] * 0.012)
+        car['total_price'] = int(car['nextMinimalBid']['cents']) * 0.015
         car['formatted_endDate'] = datetime.utcfromtimestamp(car['endDate']).strftime('%H:%M %d/%m')
         # Check if mileage is in miles and convert it
         if 'mileage' in car and car['mileage'].get('unit', '').lower() == 'mi':
