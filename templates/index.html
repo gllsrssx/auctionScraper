@@ -29,6 +29,7 @@
                                 <strong class="strong-label">Location:</strong> {{ car.location.countryCode.upper() }}, {{ car.location.city }}<br />
                                 <strong class="strong-label">Transmission:</strong> {{ car.Transmission.value }}<br />
                                 <strong class="strong-label">Bids:</strong> {{ car.bidsCount }} <br />
+                                <strong class="strong-label">Year:</strong> {{ car['First registration date'].value }}<br />
                                 <strong class="strong-label">Mileage:</strong> {{ "{:,}".format(car.mileage.value).replace(',', ' ') }} {{ car.mileage.unit }}<br />
                                 <strong class="strong-label">Price:</strong> {{ "{:,}".format(car.total_price).replace(',', ' ') }} €
                          </p>
