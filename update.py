@@ -56,7 +56,7 @@ def update_cars(data):
 def filter_cars(data):
     filtered_cars = []
     for car in data:
-        if (car['total_price'] <= 10000 
+        if (car['total_price'] <= 15000 
             and car['mileage']['value'] <= 100000 
             and 'Transmission' in car and car['Transmission']['value'].lower() == 'automatic'
             and car['location']['countryCode'] in ['be', 'de', 'nl']
